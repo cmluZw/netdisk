@@ -1,7 +1,8 @@
 <?php
 include_once "../model/Userdaofunction.php";
 include_once "../model/email/Useremail.php";
-$email=$_POST['email'];
+include_once "waf.php";
+$email=waf($_POST['email']);
 //$email="1551505032@qq.com";
 $check=check_email($email);
 if(!$check)
