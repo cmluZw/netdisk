@@ -1,7 +1,8 @@
 <?php
 include_once "../model/Userdaofunction.php";
-$username=$_POST['username'];
-$password=$_POST['password'];
+include_once "waf.php";
+$username=waf($_POST['username']);
+$password=waf($_POST['password']);
 $res=check_login($username,$password);
 if(!$res)
 {
