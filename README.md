@@ -11,5 +11,8 @@
 
 ![image](https://user-images.githubusercontent.com/78641812/114268796-9f361d00-9a35-11eb-8b3d-e0a8dcbb849a.png)
 
-
+安装时如遇到500错误，检查
+1.linux系统是否在php.ini中设置tmp路径
+2.文件权限是否给足，我给的777
+3.数据库账号密码是否正确
 
