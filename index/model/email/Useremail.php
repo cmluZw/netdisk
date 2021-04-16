@@ -3,9 +3,8 @@
 /*发送邮件方法
  *@param $to：接收者 $title：标题 $content：邮件内容
  *@return bool true:发送成功 false:发送失败
-'fkoaoctkuepfiage';//qocshqmzmeupgcai */
 //Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
+//These must be at the top of your script, not inside a function*/
 require_once("PHPMailer.php"); //PHPMailer路径得正确
 require_once("SMTP.php");
 use PHPMailer\PHPMailer;
@@ -55,7 +54,7 @@ function sendMail($to,$title,$content){
     $mail->Username ='1551505032@qq.com';
 
     //smtp登录的密码 使用生成的授权码
-    $mail->Password = 'fkoaoctkuepfiage';
+    $mail->Password = 'this is your key';
 
     //设置发件人邮箱地址 这里填入上述提到的“发件人邮箱”
     $mail->From = '1551505032@qq.com';
